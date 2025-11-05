@@ -61,13 +61,6 @@ const Footer = () => {
     }
   ];
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <footer className="bg-[#2E3A6B] text-white">
       <div className="max-w-7xl mx-auto px-6 py-16">
@@ -85,7 +78,7 @@ const Footer = () => {
             </h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Growing fresh, nutritious, and safe produce using sustainable, 
-              climate-controlled farming technology. We're committed to 
+              climate-controlled farming technology. We&apos;re committed to 
               delivering premium mushrooms and saffron year-round.
             </p>
             <div className="space-y-3">

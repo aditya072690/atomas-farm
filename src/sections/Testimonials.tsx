@@ -114,7 +114,7 @@ const Testimonials = () => {
 
             {/* Quote */}
             <blockquote className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
-              "{testimonials[currentIndex].text}"
+              &ldquo;{testimonials[currentIndex].text}&rdquo;
             </blockquote>
 
             {/* Author */}

@@ -25,7 +25,7 @@ const Contact = () => {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = async (data: any) => {
+  const onSubmit = async (data: { name: string; email: string; phone: string; message: string }) => {
     // Simulate form submission
     console.log('Form data:', data);
     setIsSubmitted(true);
@@ -81,7 +81,7 @@ const Contact = () => {
                   </h2>
                   <div className="w-24 h-1 bg-[#00A950] mx-auto mb-8"></div>
                   <p className="text-xl text-[#333333] max-w-3xl mx-auto">
-                    Have questions? Want to learn more about our products or farming process? We'd love to hear from you!
+                    Have questions? Want to learn more about our products or farming process? We&apos;d love to hear from you!
                   </p>
         </motion.div>
 
@@ -104,7 +104,7 @@ const Contact = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6"
               >
-                Thank you! Your message has been sent successfully. We'll get back to you soon.
+                Thank you! Your message has been sent successfully. We&apos;ll get back to you soon.
               </motion.div>
             )}
 
@@ -197,7 +197,7 @@ const Contact = () => {
                 Get in Touch
               </h3>
               <p className="text-lg text-[#333333] mb-8">
-                We're here to help you with your farming needs. Reach out to us 
+                We&apos;re here to help you with your farming needs. Reach out to us 
                 through any of the following ways:
               </p>
             </div>
