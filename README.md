@@ -1,63 +1,100 @@
-# Dr. Kurade Website Clone
+# Atmos Farms - Sustainable Agriculture Website
 
-A modern, responsive dental practice website built with Next.js 14, TypeScript, and Tailwind CSS. This project recreates the design and functionality of a professional dental practice website with smooth animations and excellent user experience.
+A modern, responsive website for Atmos Farms built with Next.js 15, TypeScript, and Tailwind CSS. This website showcases sustainable farming practices, premium mushrooms, and Kashmiri saffron produced using climate-controlled technology.
+
+## 🌱 About Atmos Farms
+
+Atmos Farms specializes in growing fresh, nutritious, and safe produce using sustainable, climate-controlled farming technology. We offer:
+- **Premium Mushrooms**: Button Mushrooms, Oyster Mushrooms, and Cordyceps Mushrooms
+- **Pure Kashmiri Saffron**: Hand-harvested and hygienically processed
+- **Year-Round Production**: 365 days of fresh produce
+- **Sustainable Practices**: 90% less water usage, zero pesticides
 
 ## 🚀 Features
 
-- **Modern Design**: Clean, professional design with smooth animations
+- **Modern Design**: Clean, professional design with smooth fade-in animations
 - **Fully Responsive**: Optimized for mobile, tablet, and desktop devices
 - **Interactive Components**: 
-  - Sticky navigation with mobile hamburger menu
+  - Sticky navigation with mobile sidebar menu
+  - Top banner with contact information
   - Animated hero section with call-to-action buttons
-  - Service cards with hover effects
-  - Testimonials carousel with auto-play
+  - Product showcase cards with hover effects
   - Contact form with validation
-- **Performance Optimized**: Built with Next.js 14 for optimal performance
+  - Google Maps integration
+- **Performance Optimized**: Built with Next.js 15 for optimal performance
 - **SEO Ready**: Complete meta tags and structured data
 - **Accessibility**: WCAG compliant with proper ARIA labels
+- **TypeScript**: Full type safety throughout the application
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 14 (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Animations**: Framer Motion
+- **Framework**: Next.js 15.5.6 (App Router)
+- **Language**: TypeScript 5
+- **Styling**: Tailwind CSS 3.4
+- **Animations**: Framer Motion 12.23
 - **Form Handling**: React Hook Form with Yup validation
 - **Icons**: Custom SVG icons
 - **Fonts**: Inter & Playfair Display (Google Fonts)
+- **React**: 19.1.0
 
 ## 📁 Project Structure
 
 ```
-dr-kurade-website/
+atomas-farm/
 ├── src/
 │   ├── app/
-│   │   ├── globals.css          # Global styles and Tailwind config
-│   │   ├── layout.tsx           # Root layout with metadata
-│   │   └── page.tsx             # Main page component
+│   │   ├── about/
+│   │   │   └── page.tsx          # About page
+│   │   ├── benefits/
+│   │   │   └── page.tsx          # Benefits page
+│   │   ├── contact/
+│   │   │   └── page.tsx          # Contact page
+│   │   ├── process/
+│   │   │   └── page.tsx          # Process page
+│   │   ├── products/
+│   │   │   └── page.tsx          # Products page
+│   │   ├── globals.css           # Global styles and Tailwind config
+│   │   ├── layout.tsx            # Root layout with metadata
+│   │   ├── page.tsx              # Home page
+│   │   ├── favicon.ico           # Favicon
+│   │   ├── icon.png              # App icon
+│   │   └── apple-icon.png        # Apple touch icon
 │   ├── components/
-│   │   ├── Navbar.tsx           # Navigation component
-│   │   └── Footer.tsx           # Footer component
+│   │   ├── Navbar.tsx            # Navigation component with mobile menu
+│   │   ├── TopBanner.tsx         # Top contact banner
+│   │   └── Footer.tsx            # Footer component
 │   └── sections/
-│       ├── Hero.tsx             # Hero section
-│       ├── About.tsx            # About section
-│       ├── Services.tsx         # Services section
-│       ├── Testimonials.tsx     # Testimonials carousel
-│       └── Contact.tsx          # Contact form
+│       ├── Hero.tsx              # Hero section
+│       ├── About.tsx             # About section
+│       ├── Services.tsx           # Products/Services section
+│       ├── Contact.tsx            # Contact form section
+│       └── Testimonials.tsx       # Testimonials carousel
 ├── public/
-│   └── favicon.svg              # Custom favicon
-└── package.json
+│   ├── Image/                    # Product images
+│   │   ├── Saffrom Image.jpg
+│   │   ├── Cordyceps .jpeg
+│   │   ├── Cordyceps 1.jpeg
+│   │   ├── Mushroom buttom.jpg
+│   │   └── Mushroom Oyster.jpeg
+│   ├── atmos-farms-logo.png      # Main logo
+│   ├── atmos-farms-logo1.png     # Alternative logo
+│   └── Farm background.jpg       # Farm background image
+├── package.json
+├── tsconfig.json
+├── tailwind.config.ts
+└── next.config.ts
 ```
 
 ## 🎨 Design System
 
 ### Colors
-- **Primary**: #0ea5e9 (Sky Blue)
-- **Primary Dark**: #0284c7
-- **Secondary**: #f8fafc (Light Gray)
-- **Accent**: #10b981 (Emerald)
-- **Text**: #1f2937 (Dark Gray)
-- **Muted**: #6b7280 (Gray)
+- **Primary**: #2E3A6B (Dark Blue)
+- **Primary Dark**: #1e2a4f
+- **Secondary**: #00A950 (Green)
+- **Accent**: #F4F6F9 (Light Gray)
+- **Background**: #FFFFFF (White)
+- **Foreground**: #333333 (Dark Gray)
+- **Text Muted**: #6b7280 (Gray)
 
 ### Typography
 - **Headings**: Playfair Display (Serif)
@@ -79,7 +116,7 @@ dr-kurade-website/
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd dr-kurade-website
+   cd "atomas farm"
    ```
 
 2. **Install dependencies**
@@ -108,67 +145,103 @@ dr-kurade-website/
 - **Tablet**: 768px - 1024px
 - **Desktop**: > 1024px
 
-## 🎯 Key Sections
+## 🎯 Key Pages & Sections
 
-### 1. Navigation
-- Sticky header with transparent background
-- Mobile hamburger menu with slide-out animation
-- Smooth scroll to sections
+### 1. Home Page (`/`)
+- Hero section with company introduction
+- About teaser section
+- Products teaser section
+- Process teaser section
+- Benefits teaser section
 
-### 2. Hero Section
-- Full-screen gradient background
-- Animated text and call-to-action buttons
-- Doctor image placeholder with floating elements
+### 2. About Page (`/about`)
+- Detailed company information
+- Mission and values
+- Company story and approach
 
-### 3. About Section
-- Two-column layout with image and content
-- Professional credentials list
-- Animated elements on scroll
+### 3. Products Page (`/products`)
+- Product showcase with images
+- Detailed product descriptions
+- Features and benefits for each product
+- Call-to-action buttons
 
-### 4. Services Section
-- Grid layout with service cards
-- Hover animations and effects
-- Comprehensive service descriptions
+### 4. Process Page (`/process`)
+- Farming process explanation
+- Climate-controlled environment details
+- Technology and methods used
+- Step-by-step process visualization
 
-### 5. Testimonials
-- Auto-playing carousel
-- Navigation arrows and dots
-- Patient statistics
+### 5. Benefits Page (`/benefits`)
+- Environmental benefits
+- Health benefits
+- Economic benefits
+- Sustainability advantages
 
-### 6. Contact Section
-- Form validation with React Hook Form
+### 6. Contact Page (`/contact`)
+- Contact form with validation
 - Contact information display
-- Google Maps placeholder
+- Google Maps integration
+- Business hours and location
 
-### 7. Footer
-- Multi-column layout
+## 🧩 Key Components
+
+### Navigation (`Navbar.tsx`)
+- Sticky header with logo and navigation
+- Mobile sidebar menu (doesn't cover full screen)
+- Smooth animations
+- Active page highlighting
+
+### Top Banner (`TopBanner.tsx`)
+- Displays contact email and phone
+- Sticky positioning with header
+- Green gradient background
+
+### Footer (`Footer.tsx`)
+- Company information
+- Quick navigation links
+- Product links
+- Contact details
 - Social media links
-- Office hours and contact info
+
+## 🎨 Animation Features
+
+- **Fade-in Only**: All animations use fade-in effects (no exit animations)
+- **Scroll Animations**: Elements fade in as they enter viewport
+- **Smooth Transitions**: Consistent animation timing across the site
+- **Performance Optimized**: Animations don't affect page performance
+
+## 📝 Content Management
+
+Content is managed directly in component files. To update:
+- **Products**: Edit `src/sections/Services.tsx`
+- **Contact Info**: Edit `src/components/Footer.tsx` and `src/sections/Contact.tsx`
+- **Company Info**: Edit `src/app/layout.tsx` for metadata
+- **Images**: Replace files in `public/Image/` directory
 
 ## 🔧 Customization
 
-### Adding New Sections
-1. Create a new component in `src/sections/`
-2. Import and add to `src/app/page.tsx`
-3. Add navigation link in `src/components/Navbar.tsx`
+### Adding New Products
+1. Add product information to `src/sections/Services.tsx`
+2. Add product image to `public/Image/` directory
+3. Update product array with new product details
 
-### Styling
-- Global styles: `src/app/globals.css`
-- Component styles: Use Tailwind classes
-- Custom CSS variables defined in `:root`
+### Updating Contact Information
+1. Update email in `src/components/TopBanner.tsx`
+2. Update phone in `src/components/TopBanner.tsx`
+3. Update address in `src/components/Footer.tsx`
+4. Update contact form in `src/sections/Contact.tsx`
 
-### Content Updates
-- Update text content directly in component files
-- Replace placeholder images with actual images
-- Modify contact information in Footer and Contact components
+### Changing Colors
+1. Edit `tailwind.config.ts` for theme colors
+2. Update component classes for specific color changes
 
 ## 📈 Performance
 
-- **Lighthouse Score**: 95+ (Performance, Accessibility, Best Practices, SEO)
-- **Core Web Vitals**: Optimized for LCP, FID, and CLS
-- **Image Optimization**: Next.js Image component
-- **Code Splitting**: Automatic with Next.js
+- **Next.js Image Optimization**: All images optimized automatically
+- **Code Splitting**: Automatic with Next.js App Router
+- **Lazy Loading**: Images and components load on demand
 - **Bundle Size**: Optimized with tree shaking
+- **SEO**: Meta tags and structured data for search engines
 
 ## 🚀 Deployment
 
@@ -182,24 +255,37 @@ dr-kurade-website/
 - **AWS Amplify**: Deploy from GitHub
 - **Docker**: Use provided Dockerfile
 
+## 🌍 Environment Variables
+
+No environment variables are currently required for this project.
+
+## 📞 Contact Information
+
+**Atmos Farms**
+- **Email**: info@atmosfarms.com
+- **Phone**: +91 97257 75583
+- **Address**: 130, 1st Floor, Phoneix Complex, Jetalpur Bridge, Near Suraj Plaza, Sarod, Sayajiganj, Vadodara, Gujarat 390005, India
+- **Business Hours**: Monday to Saturday: 9:00 AM – 6:00 PM, Sunday: Closed
+
 ## 🤝 Contributing
 
 1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## 📄 License
 
 This project is licensed under the MIT License.
 
-## 📞 Support
+## 🙏 Acknowledgments
 
-For support or questions, please contact:
-- Email: info@drkurade.com
-- Phone: +1 (555) 123-4567
+- Built with [Next.js](https://nextjs.org/)
+- Styled with [Tailwind CSS](https://tailwindcss.com/)
+- Animated with [Framer Motion](https://www.framer.com/motion/)
+- Icons from custom SVG designs
 
 ---
 
-Built with ❤️ using Next.js 14 and Tailwind CSS
+**Built with ❤️ for sustainable agriculture and fresh produce**
