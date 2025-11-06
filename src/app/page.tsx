@@ -36,6 +36,8 @@ export default function Home() {
                   fill
                   className="object-cover"
                   loading="lazy"
+                  quality={75}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
 
@@ -123,6 +125,8 @@ export default function Home() {
                   fill
                   className="object-cover"
                   loading="lazy"
+                  quality={75}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
             </div>
@@ -186,6 +190,8 @@ export default function Home() {
                     fill
                     className="object-cover"
                     loading="lazy"
+                    quality={75}
+                    sizes="(max-width: 768px) 192px, 192px"
                   />
                 </div>
                 <div className="relative w-48 h-48 rounded-full overflow-hidden shadow-lg">
@@ -195,6 +201,8 @@ export default function Home() {
                     fill
                     className="object-cover"
                     loading="lazy"
+                    quality={75}
+                    sizes="(max-width: 768px) 192px, 192px"
                   />
                 </div>
               </div>
@@ -300,6 +308,8 @@ export default function Home() {
                     fill
                     className="object-cover"
                     loading="lazy"
+                    quality={75}
+                    sizes="(max-width: 768px) 224px, 224px"
                   />
                 </div>
                 
@@ -311,6 +321,8 @@ export default function Home() {
                     fill
                     className="object-cover"
                     loading="lazy"
+                    quality={75}
+                    sizes="(max-width: 768px) 224px, 224px"
                   />
                 </div>
               </div>

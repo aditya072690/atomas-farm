@@ -49,10 +49,7 @@ body {
   background: var(--primary-dark);
 }
 
-/* Smooth animations */
-* {
-  transition: all 0.3s ease;
-}
+/* Smooth animations - removed global transition for performance */
 
 /* Font classes */
 .font-inter {

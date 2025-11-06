@@ -75,6 +75,8 @@ const Services = () => {
                   fill
                   className="object-cover"
                   loading="lazy"
+                  quality={75}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 {/* Product Badge */}
                 <div className="absolute top-4 left-4 bg-[#2E3A6B] text-white px-3 py-1 rounded-lg text-sm font-semibold">

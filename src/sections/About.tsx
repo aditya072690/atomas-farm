@@ -84,6 +84,8 @@ const About = () => {
                 fill
                 className="object-cover"
                 loading="lazy"
+                quality={75}
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>
