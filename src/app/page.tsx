@@ -36,8 +36,10 @@ export default function Home() {
                   fill
                   className="object-cover"
                   loading="lazy"
-                  quality={75}
+                  quality={70}
                   sizes="(max-width: 768px) 100vw, 50vw"
+                  placeholder="blur"
+                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                 />
               </div>
 
@@ -125,8 +127,10 @@ export default function Home() {
                   fill
                   className="object-cover"
                   loading="lazy"
-                  quality={75}
+                  quality={70}
                   sizes="(max-width: 768px) 100vw, 50vw"
+                  placeholder="blur"
+                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                 />
               </div>
             </div>
@@ -190,7 +194,7 @@ export default function Home() {
                     fill
                     className="object-cover"
                     loading="lazy"
-                    quality={75}
+                    quality={65}
                     sizes="(max-width: 768px) 192px, 192px"
                   />
                 </div>
@@ -201,7 +205,7 @@ export default function Home() {
                     fill
                     className="object-cover"
                     loading="lazy"
-                    quality={75}
+                    quality={65}
                     sizes="(max-width: 768px) 192px, 192px"
                   />
                 </div>
@@ -308,7 +312,7 @@ export default function Home() {
                     fill
                     className="object-cover"
                     loading="lazy"
-                    quality={75}
+                    quality={65}
                     sizes="(max-width: 768px) 224px, 224px"
                   />
                 </div>
@@ -321,7 +325,7 @@ export default function Home() {
                     fill
                     className="object-cover"
                     loading="lazy"
-                    quality={75}
+                    quality={65}
                     sizes="(max-width: 768px) 224px, 224px"
                   />
                 </div>
