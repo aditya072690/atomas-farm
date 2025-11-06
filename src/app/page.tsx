@@ -2,10 +2,14 @@
 
 import Navbar from '@/components/Navbar';
 import Hero from '@/sections/Hero';
-import Footer from '@/components/Footer';
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+
+const Footer = dynamic(() => import('@/components/Footer'), {
+  loading: () => <div className="h-64 bg-[#2E3A6B]" />,
+});
 
 export default function Home() {
   return (
@@ -17,7 +21,8 @@ export default function Home() {
         {/* About teaser between hero and footer */}
         <motion.section
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="bg-white"
         >
@@ -30,7 +35,7 @@ export default function Home() {
                   alt="About Atmos Farms"
                   fill
                   className="object-cover"
-                  priority
+                  loading="lazy"
                 />
               </div>
 
@@ -58,8 +63,9 @@ export default function Home() {
         {/* Products teaser section */}
         <motion.section
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
           className="bg-[#F4F6F9]"
         >
           <div className="max-w-7xl mx-auto px-6 py-10">
@@ -116,7 +122,7 @@ export default function Home() {
                   alt="Atmos Farms Premium Products"
                   fill
                   className="object-cover"
-                  priority
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -126,8 +132,9 @@ export default function Home() {
         {/* Process teaser section */}
         <motion.section
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
           className="bg-white"
         >
           <div className="max-w-7xl mx-auto px-6 py-10">
@@ -178,7 +185,7 @@ export default function Home() {
                     alt="Climate-Controlled Farming"
                     fill
                     className="object-cover"
-                    priority
+                    loading="lazy"
                   />
                 </div>
                 <div className="relative w-48 h-48 rounded-full overflow-hidden shadow-lg">
@@ -187,7 +194,7 @@ export default function Home() {
                     alt="Advanced Technology"
                     fill
                     className="object-cover"
-                    priority
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -218,8 +225,9 @@ export default function Home() {
         {/* Benefits teaser section */}
         <motion.section
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
           className="bg-[#F4F6F9]"
         >
           <div className="max-w-7xl mx-auto px-6 py-10">
@@ -291,7 +299,7 @@ export default function Home() {
                     alt="Vertical Farming"
                     fill
                     className="object-cover"
-                    priority
+                    loading="lazy"
                   />
                 </div>
                 
@@ -302,7 +310,7 @@ export default function Home() {
                     alt="Fresh Produce"
                     fill
                     className="object-cover"
-                    priority
+                    loading="lazy"
                   />
                 </div>
               </div>

@@ -32,7 +32,7 @@ export default function ProcessPage() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
-                  className="bg-white p-8 rounded-2xl shadow-lg h-80 w-full"
+                  className="bg-white p-6 md:p-8 rounded-2xl shadow-lg h-auto md:h-80 w-full"
                 >
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 rounded-lg flex items-center justify-center">
@@ -51,7 +51,7 @@ export default function ProcessPage() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.3 }}
-                  className="bg-white p-8 rounded-2xl shadow-lg h-80 w-full"
+                  className="bg-white p-6 md:p-8 rounded-2xl shadow-lg h-auto md:h-80 w-full"
                 >
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 rounded-lg flex items-center justify-center">
@@ -78,7 +78,7 @@ export default function ProcessPage() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.4 }}
-                  className="bg-white p-8 rounded-2xl shadow-lg h-80 w-full"
+                  className="bg-white p-6 md:p-8 rounded-2xl shadow-lg h-auto md:h-80 w-full"
                 >
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 rounded-lg flex items-center justify-center">
@@ -97,7 +97,7 @@ export default function ProcessPage() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.5 }}
-                  className="bg-white p-8 rounded-2xl shadow-lg h-80 w-full"
+                  className="bg-white p-6 md:p-8 rounded-2xl shadow-lg h-auto md:h-80 w-full"
                 >
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 rounded-lg flex items-center justify-center">

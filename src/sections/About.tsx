@@ -43,7 +43,8 @@ const About = () => {
         {/* Top Section - Titles */}
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
@@ -82,7 +83,7 @@ const About = () => {
                 alt="Atmos Farms Mission"
                 fill
                 className="object-cover"
-                priority
+                loading="lazy"
               />
             </div>
           </div>
@@ -93,8 +94,9 @@ const About = () => {
           {/* Benefits Cards */}
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
             className="space-y-6"
           >
             <div className="text-center mb-8">
@@ -107,9 +109,10 @@ const About = () => {
               {benefits.map((benefit, index) => (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.2 + (index * 0.05) }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.05 }}
                   className="bg-white p-6 rounded-xl shadow-sm border border-gray-100"
                 >
                   <div className="flex items-start space-x-4">

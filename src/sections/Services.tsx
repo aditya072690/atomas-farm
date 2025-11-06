@@ -42,7 +42,8 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
@@ -59,9 +60,10 @@ const Services = () => {
           {products.map((product, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 + (index * 0.1) }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ scale: 1.02 }}
               className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-0 border border-gray-100 overflow-hidden"
             >
@@ -72,7 +74,7 @@ const Services = () => {
                   alt={product.title}
                   fill
                   className="object-cover"
-                  priority
+                  loading="lazy"
                 />
                 {/* Product Badge */}
                 <div className="absolute top-4 left-4 bg-[#2E3A6B] text-white px-3 py-1 rounded-lg text-sm font-semibold">
@@ -108,8 +110,9 @@ const Services = () => {
         {/* CTA Section */}
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
           className="text-center mt-16"
         >
                   <div className="bg-gradient-to-r from-[#2E3A6B] to-[#1e2a4f] rounded-2xl p-12 text-white">
